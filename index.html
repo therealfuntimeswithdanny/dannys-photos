@@ -2,91 +2,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
+<script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>MYLOGO.COM</h1>
+<h1>Daniel Morrisey</h1>
 <hr>
 
-<h2>PORTFOLIO</h2>
+<h3>About Me: <i>Front End Web Developer, Head of Development at Funtimes Media</i></h3>
+<h4><i><a><i class="fa-brands fa-buffer" style="color: #f22424;"></i></a> / <a><i class="fa-brands fa-bluesky" style="color: #f22424;"></i></a> / <i class="fa-brands fa-github" style="color: #f22424;"></i> / <i class="fa-brands fa-twitch" style="color: #f22424;"></i> / <i class="fa-solid fa-envelope" style="color: #f22424;"></i></i></h4>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -94,74 +23,143 @@ h1 {
   <button class="btn" onclick="filterSelection('cars')"> Cars</button>
   <button class="btn" onclick="filterSelection('people')"> People</button>
 </div>
-
 <!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column nature">
     <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
+      <img src="https://cdn.funtimesmedia.uk/photos/DSC_0140.jpeg" alt="Mountains">
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
+    <img src="https://cdn.funtimesmedia.uk/photos/DSC_0164.jpeg" alt="Lights">
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+    <img src="https://cdn.funtimesmedia.uk/photos/DSC_2017.jpeg" alt="Nature">
     </div>
   </div>
   
   <div class="column cars">
     <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
+      <img src="https://cdn.funtimesmedia.uk/photos/DSC_2024.jpeg" alt="Car">
     </div>
   </div>
   <div class="column cars">
     <div class="content">
-    <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
+    <img src="https://cdn.funtimesmedia.uk/photos/DSC_3765.jpeg" alt="Car">
     </div>
   </div>
   <div class="column cars">
     <div class="content">
-    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
+    <img src="https://cdn.funtimesmedia.uk/photos/DSC_3793.jpeg" alt="Car">
     </div>
   </div>
 
   <div class="column people">
     <div class="content">
-      <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
+      <img src="https://cdn.funtimesmedia.uk/photos/DSC_3827.jpeg" alt="Car">
     </div>
   </div>
   <div class="column people">
     <div class="content">
-    <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
+    <img src="https://cdn.funtimesmedia.uk/photos/DSC_4756.jpeg" alt="Car">
     </div>
   </div>
   <div class="column people">
     <div class="content">
-    <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0476.JPG" alt="Car">
     </div>
   </div>
+</div>
+
+
+
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0398.JPG" alt="Mountains">
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0400.JPG" alt="Lights">
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0401.JPG" alt="Nature">
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0402.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0403.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0404.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0405.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0431.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0445.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0430.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0436.JPG" alt="Car">
+    </div>
+  </div>
+    <div class="column people">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0436.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0470.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0471.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0473.JPG" alt="Car">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://cdn.funtimesmedia.uk/photos/dannys-photos/IMG_0474.JPG" alt="Car">
+
+    </div>
+  </div>
+</div>
 <!-- END GRID -->
 </div>
 
